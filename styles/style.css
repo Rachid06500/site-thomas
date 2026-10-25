@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5e5e5;
+    color: #222222;
+}
+
+h1 {
+    color: #1f2340;
+}
+
+/* En-tête du site */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Menu de navigation */
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Section d'accueil */
+.hero {
+    background-color: white;
+    padding: 60px 40px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero h2 {
+    color: #21243D;
+    font-family: 'Heebo', sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* Bouton */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C93636;
+    color: white;
+    width: 208px;
+    min-height: 47px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+/* Photo de la section d'accueil */
+.hero-image img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px #edf7fa;
+}
+/* Conteneur général du site */
+.site-container {
+    max-width: 1100px;
+    margin: 25px auto;
+    background-color: white;
+}
+/* Section des compétences */
+.competences {
+    padding: 40px;
+    background-color: white;
+}
+
+.competences h2 {
+    color: #1f2340;
+    margin-bottom: 25px;
+}
+
+.competences-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.competence-card {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    min-height: 110px;
+}
+
+.competence-card h3 {
+    color: #1f2340;
+}
+
+/* Adaptation aux écrans mobiles */
+@media (max-width: 600px) {
+
+    .site-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .competences {
+        padding: 20px;
+    }
+
+    .competences-container {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-container {
+    grid-template-columns: 1fr !important;
+    width: 100%;
+    box-sizing: border-box;
+    }
+
+    .projet-card {
+    min-width: 0;
+    box-sizing: border-box;
+    }
+}
+
+/* Section Portfolio */
+.portfolio {
+    padding: 40px;
+}
+.portfolio h2 {
+    color: #1f2340;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.projet-card {
+    background-color: #f5f5f5;
+    padding: 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* Section Contact */
+.contact {
+    padding: 40px;
+    background-color: white;
+}
+
+.contact h2 {
+    color: #222222;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin-bottom: 25px;
+}
+
+/* Formulaire */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+}
+
+.contact label {
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    background-color: #C93636;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.contact button:hover {
+    background-color: #e7444c;
+}
+
+/* Adaptation mobile */
+@media (max-width: 600px) {
+    .contact {
+        padding: 20px;
+    }
+
+    .contact form {
+        width: 100%;
+    }
+}
