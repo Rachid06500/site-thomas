@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Thomas - Graphiste freelance</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <meta name="description" content="Thomas, graphiste freelance, crée des sites web modernes, des identités graphiques et des interfaces adaptées à tous les écrans.">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+   <div class="site-container">
+    <header class="site-header">
+    <a class="logo" href="#accueil">BeThom</a>
+
+    <nav class="menu">
+        <a href="#accueil">Accueil</a>
+        <a href="#articles">Blog</a>
+        <a href="#projets">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <h1>Hi, Je suis Thomas, Graphiste</h1>
+
+                <p>
+                Passionné par le code et le design, j'aide les entreprises
+                et les créateurs à développer des sites modernes,
+                performants et adaptés à leurs besoins.
+                </p>
+
+                <a href="#contact" class="button">Me contacter</a>
+            </div>
+            <div class="hero-image">
+            <img src="assets/Thomas.png" alt="Portrait de Thomas">
+            </div>
+        </section>
+        <section id="competences" class="competences">
+        <h2>Mes compétences</h2>
+
+        <div class="competences-container">
+            <div class="competence-card">
+                <h3>Création de sites web</h3>
+                <p>Des sites modernes et adaptés aux besoins des clients.</p>
+            </div>
+
+            <div class="competence-card">
+                <h3>Design graphique</h3>
+                <p>Des visuels soignés pour valoriser votre identité.</p>
+            </div>
+
+            <div class="competence-card">
+                <h3>Design responsive</h3>
+                <p>Des sites lisibles sur ordinateur, tablette et mobile.</p>
+            </div>
+            </div>
+        </section>
+            <!-- Section Portfolio -->
+    <section id="projets" class="portfolio">
+        <h2>Mes réalisations</h2>
+        <p>Découvrez quelques exemples de mes projets.</p>
+
+        <div class="portfolio-container">
+            <article class="projet-card">
+                <h3>Projet 1</h3>
+                <p>Création d'un site web moderne.</p>
+            </article>
+
+            <article class="projet-card">
+                <h3>Projet 2</h3>
+                <p>Conception d'une identité graphique.</p>
+            </article>
+
+            <article class="projet-card">
+                <h3>Projet 3</h3>
+                <p>Création d'une interface responsive.</p>
+            </article>
+        </div>
+    </section>
+
+<!-- Section Contact -->
+<section id="contact" class="contact">
+    <h2>Me contacter</h2>
+    <p>Vous avez un projet ? Parlons-en !</p>
+
+    <form>
+        <label for="nom">Votre nom</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">Votre adresse e-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Votre message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Envoyer le message</button>
+    </form>
+</section>
+    </main>
+
+    <footer>
+        <p>© 2026 Thomas - Tous droits réservés.</p>
+    </footer>
+   </div> 
+</body>
+
+</html>
