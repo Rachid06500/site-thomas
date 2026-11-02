@@ -1,112 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Thomas - Graphiste freelance</title>
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <meta name="description" content="Thomas, graphiste freelance, crée des sites web modernes, des identités graphiques et des interfaces adaptées à tous les écrans.">
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Thomas, graphiste freelance.">
+  <title>BeThom — Portfolio de Thomas</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-   <div class="site-container">
-    <header class="site-header">
+  <header class="site-header" id="accueil">
     <a class="logo" href="#accueil">BeThom</a>
-
-    <nav class="menu">
-        <a href="#accueil">Accueil</a>
-        <a href="#articles">Blog</a>
-        <a href="#projets">Portfolio</a>
-        <a href="#contact">Contact</a>
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="#accueil">Accueil</a>
+      <a href="#articles">Blog</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
     </nav>
-    </header>
+  </header>
 
-    <main>
-        <section id="accueil" class="hero">
-            <div class="hero-content">
-                <h1>Hi, Je suis Thomas, Graphiste</h1>
-
-                <p>
-                Passionné par le code et le design, j'aide les entreprises
-                et les créateurs à développer des sites modernes,
-                performants et adaptés à leurs besoins.
-                </p>
-
-                <a href="#contact" class="button">Me contacter</a>
-            </div>
-            <div class="hero-image">
-            <img src="assets/Thomas.png" alt="Portrait de Thomas">
-            </div>
-        </section>
-        <section id="competences" class="competences">
-        <h2>Mes compétences</h2>
-
-        <div class="competences-container">
-            <div class="competence-card">
-                <h3>Création de sites web</h3>
-                <p>Des sites modernes et adaptés aux besoins des clients.</p>
-            </div>
-
-            <div class="competence-card">
-                <h3>Design graphique</h3>
-                <p>Des visuels soignés pour valoriser votre identité.</p>
-            </div>
-
-            <div class="competence-card">
-                <h3>Design responsive</h3>
-                <p>Des sites lisibles sur ordinateur, tablette et mobile.</p>
-            </div>
-            </div>
-        </section>
-            <!-- Section Portfolio -->
-    <section id="projets" class="portfolio">
-        <h2>Mes réalisations</h2>
-        <p>Découvrez quelques exemples de mes projets.</p>
-
-        <div class="portfolio-container">
-            <article class="projet-card">
-                <h3>Projet 1</h3>
-                <p>Création d'un site web moderne.</p>
-            </article>
-
-            <article class="projet-card">
-                <h3>Projet 2</h3>
-                <p>Conception d'une identité graphique.</p>
-            </article>
-
-            <article class="projet-card">
-                <h3>Projet 3</h3>
-                <p>Création d'une interface responsive.</p>
-            </article>
-        </div>
+  <main>
+    <section class="hero section-container">
+      <div class="hero-copy">
+        <h1>Hi, Je suis Thomas,<br>Graphiste</h1>
+        <p>Passionné par le code et le design, j'aide les entreprises et les créateurs à développer des sites modernes, performants et adaptés à leurs besoins. Mon objectif est de transformer vos idées en expériences numériques fluides et efficaces.</p>
+        <a class="cv-button" href="#" aria-label="Télécharger mon CV">Télécharger mon CV</a>
+      </div>
+      <img class="profile-photo" src="assets/portrait-thomas.jpg" alt="Portrait de Thomas">
     </section>
 
-<!-- Section Contact -->
-<section id="contact" class="contact">
-    <h2>Me contacter</h2>
-    <p>Vous avez un projet ? Parlons-en !</p>
+    <section class="recent-section" id="articles">
+      <div class="section-container">
+        <div class="section-heading">
+          <h2>Articles récents</h2>
+          <a href="#articles">View all</a>
+        </div>
+        <div class="article-grid">
+          <article class="article-card">
+            <h3>Créer un design system à partir<br class="desktop-break"> de zéro</h3>
+            <div class="article-meta"><span>12 Feb 2020</span><i></i><span>Design, Pattern</span></div>
+            <p>Dans cet article, je partage mon approche pour mettre en place un design system clair et efficace, afin de garantir la cohérence visuelle d'un projet digital.</p>
+          </article>
+          <article class="article-card">
+            <h3>Créer des icônes pixel perfect<br class="desktop-break"> dans Figma</h3>
+            <div class="article-meta"><span>12 Feb 2020</span><i></i><span>Figma, Icon Design</span></div>
+            <p>Découvrez mes techniques pour concevoir des icônes nettes et précises dans Figma, adaptées aussi bien au web qu'aux applications mobiles.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <form>
-        <label for="nom">Votre nom</label>
-        <input type="text" id="nom" name="nom" required>
+    <section class="featured-section section-container" id="portfolio">
+      <h2 class="section-title">Travaux en vedette</h2>
+      <div class="project-list">
+        <article class="project">
+          <img src="assets/dashboard.jpg" alt="Aperçu d'un tableau de bord">
+          <div class="project-copy">
+            <h3>Design de tableaux de bord</h3>
+            <div class="project-meta"><span class="year">2020</span><span>Dashboard</span></div>
+            <p>Un projet de conception d'interface utilisateur pour une plateforme de gestion. L'objectif était de proposer un tableau de bord intuitif et esthétique.</p>
+          </div>
+        </article>
+        <article class="project">
+          <img src="assets/portrait-art.jpg" alt="Illustration colorée d'un portrait">
+          <div class="project-copy">
+            <h3>Portraits vibrants de 2020</h3>
+            <div class="project-meta"><span class="year">2018</span><span>Illustration</span></div>
+            <p>Série d'illustrations numériques réalisées avec une palette de couleurs audacieuses, explorant l'identité et l'émotion à travers le portrait.</p>
+          </div>
+        </article>
+        <article class="project">
+          <img src="assets/typography.jpg" alt="Composition typographique">
+          <div class="project-copy">
+            <h3>36 jours de typographie</h3>
+            <div class="project-meta"><span class="year">2018</span><span>Typography</span></div>
+            <p>Un projet créatif consistant à explorer et styliser les caractères de la typographie malayalam à travers une série de visuels graphiques.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-        <label for="email">Votre adresse e-mail</label>
-        <input type="email" id="email" name="email" required>
+    <section class="contact-section section-container" id="contact">
+      <h2 class="contact-heading">Me contacter</h2>
+      <div class="contact-grid">
+        <div class="contact-intro">
+          <h3>Parlons-en</h3>
+          <p>Vous avez une grande idée ou un projet à développer et besoin d'aide ? Contactez-moi, je serai ravi d'échanger avec vous et de vous accompagner.</p>
+          <h3>Email</h3>
+          <a href="mailto:beebs@gmail.com">beebs@gmail.com</a>
+          <h3>Socials</h3>
+          <div class="social-links">
+            <a href="#">Instagram</a><a href="#">Twitter</a><a href="#">Facebook</a>
+          </div>
+        </div>
+        <form class="contact-form">
+          <label>Nom<input type="text" name="name"></label>
+          <label>Email<input type="email" name="email"></label>
+          <label>Quel service vous intéresse
+            <select name="service"><option value="">Select project type</option><option>Web design</option><option>Identité visuelle</option><option>Illustration</option></select>
+          </label>
+          <label>Budget
+            <select name="budget"><option value="">Select project budget</option><option>Moins de 500 €</option><option>500 à 1 500 €</option><option>Plus de 1 500 €</option></select>
+          </label>
+          <label>Message<textarea name="message" rows="5"></textarea></label>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-        <label for="message">Votre message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Envoyer le message</button>
-    </form>
-</section>
-    </main>
-
-    <footer>
-        <p>© 2026 Thomas - Tous droits réservés.</p>
-    </footer>
-   </div> 
+  <footer class="site-footer">
+    <div class="footer-socials" aria-label="Réseaux sociaux"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Twitter">♥</a><a href="#" aria-label="LinkedIn">in</a></div>
+    <p>Copyright ©2020 All rights reserved</p>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      const opened = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!opened));
+      nav.classList.toggle('is-open', !opened);
+    });
+    document.querySelector('.contact-form').addEventListener('submit', event => event.preventDefault());
+  </script>
 </body>
-
 </html>
